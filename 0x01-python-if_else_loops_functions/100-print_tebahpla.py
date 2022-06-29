@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-for c in range(ord('z'), ord('a') - 1, -1):
-    print("{:c}".format((c - (ord('a') - ord('A'))) if c % 2 else c), end='')
+for x in range(ord('z'), ord('a') - 1, -1):
+    if (x % 2 != 0):
+        i = x - ord('a') + ord('A')
+    else:
+        i = x
+    print("{:c}".format(i), end="")
