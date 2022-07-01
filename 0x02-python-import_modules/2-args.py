@@ -1,14 +1,15 @@
-#!/usr/bin/python3
-import sys
-if __name__ == "__main__":
-    ac = len(sys.argv)
-    if ac == 1:
-        print("{} arguments.".format(ac - 1))
-    elif ac == 2:
-        print("{} argument:".format(ac - 1))
-        for x in range(1, ac):
-            print("{}: {}".format(x, sys.argv[x]))
-    else:
-        print("{} arguments:".format(ac - 1))
-        for x in range(1, ac):
-            print("{}: {}".format(x, sys.argv[x]))
+#!/usr/bin/pytthon3
+def no_of_argu(*args):
+     
+    # using len() method in args to count
+    return(len(args))
+ 
+ 
+a = 1
+b = 3
+ 
+# arguments passed
+n = no_of_argu(1, 2, 4, a)
+ 
+# result printed
+print(" The number of arguments are: ", n)
