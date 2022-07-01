@@ -15,4 +15,4 @@ if __name__ == "__main__":
             break
     else:
         print("Unknown operator. Available operators: +, -, * and /")
-        quit(1)
+        quit(1))
