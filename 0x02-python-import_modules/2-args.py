@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!C:/Users/Liferay/AppData/Local/Programs/Python/Python310
 if __name__ == "__main__":
     from sys import argv
     l = len(argv)
