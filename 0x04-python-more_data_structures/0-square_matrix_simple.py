@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    squared = []
-    for line in matrix:
-        squared.append([c**2 for c in line])
-    return squared
+    def square_cells(array):
+        result = []
+        for cell in array:
+            result.append(cell ** 2)
+        return result
+    return list(map(square_cells, matrix))
