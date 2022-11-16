@@ -1,5 +1,6 @@
 #!/usr/bin/node
 const request = require('request');
+const url = 'https://jsonplaceholder.typicode.com/todos' + process.argv[2];
 request(process.argv[2], function (error, response, body) {
   if (!error) {
     const todos = JSON.parse(body);
